@@ -1,0 +1,11 @@
+/home/kmr1/Futurama-modding/NIF/obj/Debug/net8.0/NIF.GeneratedMSBuildEditorConfig.editorconfig
+/home/kmr1/Futurama-modding/NIF/obj/Debug/net8.0/NIF.AssemblyInfoInputs.cache
+/home/kmr1/Futurama-modding/NIF/obj/Debug/net8.0/NIF.AssemblyInfo.cs
+/home/kmr1/Futurama-modding/NIF/obj/Debug/net8.0/NIF.csproj.CoreCompileInputs.cache
+/home/kmr1/Futurama-modding/NIF/bin/Debug/net8.0/NIF.deps.json
+/home/kmr1/Futurama-modding/NIF/bin/Debug/net8.0/NIF.dll
+/home/kmr1/Futurama-modding/NIF/bin/Debug/net8.0/NIF.pdb
+/home/kmr1/Futurama-modding/NIF/obj/Debug/net8.0/NIF.dll
+/home/kmr1/Futurama-modding/NIF/obj/Debug/net8.0/refint/NIF.dll
+/home/kmr1/Futurama-modding/NIF/obj/Debug/net8.0/NIF.pdb
+/home/kmr1/Futurama-modding/NIF/obj/Debug/net8.0/ref/NIF.dll

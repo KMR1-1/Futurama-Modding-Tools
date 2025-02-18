@@ -1,0 +1,17 @@
+/home/kmr1/Futurama-modding/Modding/bin/Debug/net8.0/Modding
+/home/kmr1/Futurama-modding/Modding/bin/Debug/net8.0/Modding.deps.json
+/home/kmr1/Futurama-modding/Modding/bin/Debug/net8.0/Modding.runtimeconfig.json
+/home/kmr1/Futurama-modding/Modding/bin/Debug/net8.0/Modding.dll
+/home/kmr1/Futurama-modding/Modding/bin/Debug/net8.0/Modding.pdb
+/home/kmr1/Futurama-modding/Modding/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.csproj.AssemblyReference.cache
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.GeneratedMSBuildEditorConfig.editorconfig
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.AssemblyInfoInputs.cache
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.AssemblyInfo.cs
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.csproj.CoreCompileInputs.cache
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.csproj.Up2Date
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.dll
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/refint/Modding.dll
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.pdb
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.genruntimeconfig.cache
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/ref/Modding.dll

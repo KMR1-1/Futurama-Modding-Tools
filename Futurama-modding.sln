@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "Project\Project.csproj", "{A642E027-A7A1-4D9D-BD33-8B0C9FE04759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLTF", "GLTF\GLTF.csproj", "{2C16DB20-D3CB-4300-841B-E6858FD08145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modding", "Modding\Modding.csproj", "{341D61A9-31F2-48C5-BB62-468FD588B8B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A642E027-A7A1-4D9D-BD33-8B0C9FE04759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A642E027-A7A1-4D9D-BD33-8B0C9FE04759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A642E027-A7A1-4D9D-BD33-8B0C9FE04759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A642E027-A7A1-4D9D-BD33-8B0C9FE04759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C16DB20-D3CB-4300-841B-E6858FD08145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C16DB20-D3CB-4300-841B-E6858FD08145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C16DB20-D3CB-4300-841B-E6858FD08145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C16DB20-D3CB-4300-841B-E6858FD08145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341D61A9-31F2-48C5-BB62-468FD588B8B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341D61A9-31F2-48C5-BB62-468FD588B8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341D61A9-31F2-48C5-BB62-468FD588B8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341D61A9-31F2-48C5-BB62-468FD588B8B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
