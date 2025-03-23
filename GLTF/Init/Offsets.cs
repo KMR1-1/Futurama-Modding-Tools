@@ -2,9 +2,9 @@ using Newtonsoft.Json;
 
 public class Offsets
 {
-    public Dictionary<string, long> node;
-    public Dictionary<string, long> mesh;
-    public Dictionary<string, long> image;
+    public Dictionary<string, long> node = new Dictionary<string, long>();
+    public Dictionary<string, long> mesh = new Dictionary<string, long>();
+    public Dictionary<string, long> image = new Dictionary<string, long>();
     public Offsets()
     {
     }
@@ -16,6 +16,9 @@ public class Offsets
             {"mesh", mesh},
             {"image", image},
         };
+        node = new Dictionary<string, long>();
+        mesh = new Dictionary<string, long>();
+        image = new Dictionary<string, long>();
         return JsonConvert.SerializeObject(offsetDict, Formatting.Indented);
     }
 }

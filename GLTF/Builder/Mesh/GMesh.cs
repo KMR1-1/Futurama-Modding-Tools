@@ -16,7 +16,7 @@ namespace FuturamaLib.GLTF.Builder.Mesh
             {
                 var geometry = new ProcessGeometry(name, ref gltf, data);
                 primitives = geometry.primitives;
-                gltf.variables.offsets.mesh[name] = data.Offsets["vertice"];
+                gltf.variables.offsets.mesh[name] = data.Offsets["vertices"];
             }
             if (HasTexture(niNode, mesh))
             {

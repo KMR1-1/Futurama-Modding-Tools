@@ -15,3 +15,4 @@
 /home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.pdb
 /home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.genruntimeconfig.cache
 /home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/ref/Modding.dll
+/home/kmr1/Futurama-modding/Modding/obj/Debug/net8.0/Modding.sourcelink.json

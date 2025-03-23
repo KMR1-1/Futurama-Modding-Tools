@@ -8,7 +8,6 @@ class ProjectBuilder
     public ProjectBuilder(string isoPath, string projectName, List<long> offsets, List<string> option)
     {
 
-
     }
     public void BuildProject(string isoPath, string projectName, List<long> offsets, List<string> option)
     {

@@ -5,7 +5,7 @@ using FuturamaLib.NIF.Structures;
 
 namespace FuturamaLib.GLTF.Builder
 {
-
+//TODO image flipped top bottom left to topleft
 
     public class TGAGenerator
     {

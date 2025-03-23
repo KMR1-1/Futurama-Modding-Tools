@@ -19,7 +19,7 @@ namespace FuturamaLib.GLTF.Builder.NodeStructures
         public Node(ref Gltf gltf, NiAVObject node): base()
         {
             Type = this.GetType().Name;
-            Name = node.Name.Value;
+            Name = node.Name.Value.Replace(':', '_');
             if(string.IsNullOrEmpty(Name))
                 Name = $"{gltf.counter.node}";
             Id = ++gltf.counter.node;
