@@ -33,7 +33,10 @@ namespace FuturamaLib.NIF.Structures
             HasVertices = reader.ReadBoolean();
 
             if (HasVertices)
+            {
+                Offsets["vertices"] = reader.BaseStream.Position;
                 Vertices = reader.ReadArray<Vector3>(NumVertices);
+            }
 
             HasNormals = reader.ReadBoolean();
             if (HasNormals)
