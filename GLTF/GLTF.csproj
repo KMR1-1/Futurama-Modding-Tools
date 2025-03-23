@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="NewtonSoft.Json" Version="13.0.3" />
+    <PackageReference Include="SharpGltf.Core" Version="1.0.3" />
     <PackageReference Include="SixLabors.ImageSharp" Version="3.1.6" />
   </ItemGroup>
 

@@ -2,10 +2,10 @@ using FuturamaLib.NIF.Structures;
 
 namespace FuturamaLib.GLTF.Builder.Mesh
 {
-    public class TexAplaMode
+    public class TexAlphaMode
     {
         public string alphaMode {get; set;}
-        public TexAplaMode(NiNode niNode, NiAVObject mesh)
+        public TexAlphaMode(NiNode niNode, NiAVObject mesh)
         {
             alphaMode = "MASK";
             foreach (var ppt in niNode.Properties)

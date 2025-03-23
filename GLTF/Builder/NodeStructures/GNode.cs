@@ -39,7 +39,6 @@ namespace FuturamaLib.GLTF.Builder.NodeStructures
             {
                 extradict["file"] = "defs";
             }
-            nodedict["extras"] = extradict;
             gltf.structure.nodes.Add(nodedict);
         }
 

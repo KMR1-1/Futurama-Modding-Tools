@@ -93,9 +93,9 @@ namespace FuturamaLib.GLTF.Builder
                 {
                     foreach (var color in palette)
                     {
-                        writer.Write(color.R);
-                        writer.Write(color.G);
                         writer.Write(color.B);
+                        writer.Write(color.G);
+                        writer.Write(color.R);
                         writer.Write(color.A);
                     }
                 }

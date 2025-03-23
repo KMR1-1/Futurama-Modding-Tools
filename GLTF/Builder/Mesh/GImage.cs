@@ -6,7 +6,6 @@ namespace FuturamaLib.GLTF.Builder.Mesh
     class GImage
     {
         public uint texref {get; set;}
-        public Dictionary<string, object> extras {get;set;}
         public GImage(NiTexturingProperty tex, ref Gltf gltf, string name)
         {
             texref = tex.BaseTexture.Source.Object.InternalTexture.RefId;
@@ -21,16 +20,9 @@ namespace FuturamaLib.GLTF.Builder.Mesh
                     TgaToPng.ConvertirImageTgaEnPng(tgapath);
                     string pngpath = Path.Combine("texture", $"{name}.png");
                     gltf.structure.images.Add(new Dictionary<string, object> { { "uri", pngpath } });
+                    gltf.variables.offsets.image[name] = texdata.Offsets["PixelData"];
                 }
-                extras = new Dictionary<string, object>
-                {
-                    {"PixelData", texdata.Offsets["PixelData"]},
-                    {"Width", texdata.MipMaps[0].Width},
-                    {"Height", texdata.MipMaps[0].Height},
-                    {"Palette", texdata.Palette.Object.Offsets["Palette"]},
-                };
             }
-            
         }
     }
 }

@@ -4,6 +4,7 @@ namespace FuturamaLib.GLTF.Init
     {
         public NifManager readers {get; set;}
         public FolderManager folderManager {get;}
+        public Offsets offsets;
         public Variables(string rootDir, string projDir)
         {
             folderManager = new FolderManager(rootDir, projDir);

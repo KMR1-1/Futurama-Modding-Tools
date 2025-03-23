@@ -1,4 +1,5 @@
 using FuturamaLib.GLTF.Init;
+using FuturamaLib.GLTF.Builder;
 
 namespace FuturamaLib.GLTF.Builder.NodeStructures
 {

@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "SharpGltf.Core": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "SixLabors.ImageSharp": {
               "target": "Package",
               "version": "[3.1.6, )"

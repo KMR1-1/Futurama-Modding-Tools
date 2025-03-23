@@ -14,6 +14,61 @@
             "related": ".xml"
           }
         }
+      },
+      "SharpGLTF.Core/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/SharpGLTF.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpGLTF.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/3.1.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "GLTF/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "NIF": "1.0.0",
+          "NewtonSoft.Json": "13.0.3",
+          "SharpGltf.Core": "1.0.3",
+          "SixLabors.ImageSharp": "3.1.6"
+        },
+        "compile": {
+          "bin/placeholder/GLTF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GLTF.dll": {}
+        }
+      },
+      "NIF/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NIF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NIF.dll": {}
+        }
       }
     }
   },
@@ -47,10 +102,57 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "SharpGLTF.Core/1.0.3": {
+      "sha512": "su+Flcg2g6GgOIgulRGBDMHA6zY5NBx6NYH1Ayd6iBbSbwspHsN2VQgZfANgJy92cBf7qtpjC0uMiShbO+TEEg==",
+      "type": "package",
+      "path": "sharpgltf.core/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "glTF2Sharp.png",
+        "lib/net6.0/SharpGLTF.Core.dll",
+        "lib/net6.0/SharpGLTF.Core.xml",
+        "lib/net8.0/SharpGLTF.Core.dll",
+        "lib/net8.0/SharpGLTF.Core.xml",
+        "lib/netstandard2.0/SharpGLTF.Core.dll",
+        "lib/netstandard2.0/SharpGLTF.Core.xml",
+        "lib/netstandard2.1/SharpGLTF.Core.dll",
+        "lib/netstandard2.1/SharpGLTF.Core.xml",
+        "sharpgltf.core.1.0.3.nupkg.sha512",
+        "sharpgltf.core.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp/3.1.6": {
+      "sha512": "dHQ5jugF9v+5/LCVHCWVzaaIL6WOehqJy6eju/0VFYFPEj2WtqkGPoEV9EVQP83dHsdoqYaTuWpZdwAd37UwfA==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/3.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/SixLabors.ImageSharp.props",
+        "lib/net6.0/SixLabors.ImageSharp.dll",
+        "lib/net6.0/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.3.1.6.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    },
+    "GLTF/1.0.0": {
+      "type": "project",
+      "path": "../GLTF/GLTF.csproj",
+      "msbuildProject": "../GLTF/GLTF.csproj"
+    },
+    "NIF/1.0.0": {
+      "type": "project",
+      "path": "../NIF/NIF.csproj",
+      "msbuildProject": "../NIF/NIF.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "GLTF >= 1.0.0",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
@@ -78,7 +180,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/kmr1/Futurama-modding/GLTF/GLTF.csproj": {
+              "projectPath": "/home/kmr1/Futurama-modding/GLTF/GLTF.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -12,11 +12,11 @@ namespace FuturamaLib.GLTF.Builder.Mesh
         {
             mdict = new Dictionary<string, object>();
             var primitives = new Dictionary<string, object>();
-
             if (mesh.Data.IsValid && mesh.Data.Object is NiTriStripsData data && data != null)
             {
                 var geometry = new ProcessGeometry(name, ref gltf, data);
                 primitives = geometry.primitives;
+                gltf.variables.offsets.mesh[name] = data.Offsets["vertice"];
             }
             if (HasTexture(niNode, mesh))
             {

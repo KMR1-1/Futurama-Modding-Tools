@@ -1,5 +1,5 @@
 using System.Numerics;
-
+namespace Modding{
 class WritePos
 {
     public Vector3 translation { get; set; }
@@ -27,4 +27,13 @@ class WritePos
             System.Console.WriteLine($"could not write pos in {offset}");
         }
     }
+    public void WritePosToFile()
+    {
+
+    }
+    public void GetPos()
+    {
+        
+    }
+}
 }

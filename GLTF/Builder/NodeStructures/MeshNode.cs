@@ -12,14 +12,14 @@ namespace FuturamaLib.GLTF.Builder.NodeStructures
         {
             if(string.IsNullOrEmpty(mesh.Name.Value))
             {
-                Name = node.Name.Value;
+                Name = node.Name.Value.Replace(':', '_');
                 if(string.IsNullOrEmpty(Name))
                 {
                     Name = gltf.counter.mesh.ToString();
                 }
             }
             new GMesh(node, mesh, ref gltf, Name);
-            Mesh = gltf.counter.mesh++;   
+            Mesh = gltf.counter.mesh++;
         }
     }
 }

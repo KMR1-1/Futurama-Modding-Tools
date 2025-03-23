@@ -1,22 +1,19 @@
+using FuturamaLib.GLTF.Init;
+
 namespace Project
 {
     public class CreateProject
     {
         string projectPath {get; set;}
-        public CreateProject(string projectPath, string isoPath)
+        public CreateProject(string projectPath)
         {
-            this.projectPath =  projectPath;
-            ManageFolder();
-            CopyIso(isoPath);
-            
+            this.projectPath = projectPath;
         }
         public void ManageFolder()
         {
             if (!Directory.Exists(projectPath))
             {
                 Directory.CreateDirectory(projectPath);
-                var extractedDir = Path.Combine(projectPath, "Extracted");
-                Directory.CreateDirectory(extractedDir);
                 var convertedDir = Path.Combine(projectPath, "Converted");
                 Directory.CreateDirectory(convertedDir);
             }
@@ -45,6 +42,20 @@ namespace Project
             {
                 System.Console.WriteLine("Iso Not Found");
             }
+        }
+        public void ExtractImg(List<long> offsets)
+        {
+            var extractor = new ImgExtractor(offsets, projectPath);
+            foreach (var offset in offsets)
+            {
+                extractor.ListFiles(offset*2048);
+            }
+            extractor.Close(projectPath);
+        }
+        public void ConvertToGltf(List<string> option=null)
+        {
+            var gltf = new GltfFactory(projectPath);
+            gltf.Level(option);
         }
     }
 }

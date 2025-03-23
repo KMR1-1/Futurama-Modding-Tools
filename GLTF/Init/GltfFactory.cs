@@ -4,19 +4,23 @@ namespace FuturamaLib.GLTF.Init
 {
     public class GltfFactory
     {
-        public string projDir;
-        public GltfFactory(string projDir)
+        public string projectPath;
+        public GltfFactory(string projectPath)
         {
-            this.projDir = projDir;
+            this.projectPath = projectPath;
         }
-        public void Level(List<string> option)
+        public void Level(List<string> option = null)
         {
-            var level = new LevelFactory(projDir);
+            var level = new LevelFactory(projectPath);
+            if(option == null || option.Count == 0)
+            {
+                option = level.GetAllLevel();
+            }
             level.ConvertLevels(option);
         }
         public void Menu(List<string> fileNames)
         {
-            new BuildMenu(projDir, fileNames);
+            new BuildMenu(projectPath, fileNames);
         }
     }
 }

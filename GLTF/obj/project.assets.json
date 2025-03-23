@@ -15,6 +15,19 @@
           }
         }
       },
+      "SharpGLTF.Core/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/SharpGLTF.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpGLTF.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SixLabors.ImageSharp/3.1.6": {
         "type": "package",
         "compile": {
@@ -74,6 +87,26 @@
         "packageIcon.png"
       ]
     },
+    "SharpGLTF.Core/1.0.3": {
+      "sha512": "su+Flcg2g6GgOIgulRGBDMHA6zY5NBx6NYH1Ayd6iBbSbwspHsN2VQgZfANgJy92cBf7qtpjC0uMiShbO+TEEg==",
+      "type": "package",
+      "path": "sharpgltf.core/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "glTF2Sharp.png",
+        "lib/net6.0/SharpGLTF.Core.dll",
+        "lib/net6.0/SharpGLTF.Core.xml",
+        "lib/net8.0/SharpGLTF.Core.dll",
+        "lib/net8.0/SharpGLTF.Core.xml",
+        "lib/netstandard2.0/SharpGLTF.Core.dll",
+        "lib/netstandard2.0/SharpGLTF.Core.xml",
+        "lib/netstandard2.1/SharpGLTF.Core.dll",
+        "lib/netstandard2.1/SharpGLTF.Core.xml",
+        "sharpgltf.core.1.0.3.nupkg.sha512",
+        "sharpgltf.core.nuspec"
+      ]
+    },
     "SixLabors.ImageSharp/3.1.6": {
       "sha512": "dHQ5jugF9v+5/LCVHCWVzaaIL6WOehqJy6eju/0VFYFPEj2WtqkGPoEV9EVQP83dHsdoqYaTuWpZdwAd37UwfA==",
       "type": "package",
@@ -100,6 +133,7 @@
     "net8.0": [
       "NIF >= 1.0.0",
       "NewtonSoft.Json >= 13.0.3",
+      "SharpGltf.Core >= 1.0.3",
       "SixLabors.ImageSharp >= 3.1.6"
     ]
   },
@@ -153,6 +187,10 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
+          "SharpGltf.Core": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
           "SixLabors.ImageSharp": {
             "target": "Package",
             "version": "[3.1.6, )"
@@ -177,5 +215,17 @@
         "runtimeIdentifierGraphPath": "/opt/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SixLabors.ImageSharp' 3.1.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-2cmq-823j-5qj8",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

@@ -23,7 +23,7 @@ namespace FuturamaLib.GLTF.Builder.NodeStructures
             if(string.IsNullOrEmpty(Name))
                 Name = $"{gltf.counter.node}";
             Id = ++gltf.counter.node;
-            PosOffset = node.Offsets["pos"];
+            gltf.variables.offsets.node[Name] = node.Offsets["pos"];
             Translations = new List<float> {node.Translation.X, node.Translation.Y, node.Translation.Z};
             Rotations = RotToQuat.Quat(node.Rotation);
             Scale = new List<float> { node.Scale, node.Scale, node.Scale };

@@ -5,20 +5,15 @@ public class ImgExtractor
 {
     private FileStream fileStream;
     public Dictionary<string, long> FilePaths { get; private set; }
-    public string outPutPath {get; set;}
+    public string extractedDir {get; set;}
 
     public ImgExtractor(List<long> offsets, string projectPath)
     {
-        outPutPath = Path.Combine(projectPath, "Extracted");
+        extractedDir = Path.Combine(projectPath, "Extracted");
+        Directory.CreateDirectory(extractedDir);
         var isoPath = Path.Combine(projectPath, "Futurama.iso");
         fileStream = new FileStream(isoPath, FileMode.Open, FileAccess.Read);
         FilePaths = new Dictionary<string, long>();
-        
-        foreach (var offset in offsets)
-        {
-            ListFiles(offset*2048);
-        }
-        Close(projectPath);
     }
 
     private int ReadInt32()
@@ -47,7 +42,7 @@ public class ImgExtractor
         }
     }
 
-    private void ListFiles(long offset)
+    public void ListFiles(long offset)
     {
         fileStream.Seek(offset, SeekOrigin.Begin);
         int rootDirectorySize = ReadInt32();
@@ -58,7 +53,7 @@ public class ImgExtractor
 
     private void ListDirectory(string basePath, long directoryEnd, long archiveOffset)
     {
-        var outpath = Path.Combine(outPutPath, basePath.TrimStart('/'));
+        var outpath = Path.Combine(extractedDir, basePath.TrimStart('/'));
         if (!Directory.Exists(outpath))
         {
             Directory.CreateDirectory(outpath);
@@ -84,7 +79,7 @@ public class ImgExtractor
             }
             else
             {
-                outpath = Path.Combine(outPutPath, fullPath.TrimStart('/'));
+                outpath = Path.Combine(extractedDir, fullPath.TrimStart('/'));
                 int dataOffset = ReadInt32();
                 long realOffset = archiveOffset+dataOffset;
                 var currentOffset = fileStream.Position;

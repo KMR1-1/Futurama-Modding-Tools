@@ -19,6 +19,13 @@ namespace FuturamaLib.GLTF.Init
             var json = structure.ToDict();
             var outPath = Path.Combine(variables.folderManager.roomPath, $"{name}.gltf");
             File.WriteAllText(outPath, json);
+            var converter = new ConvertToGbl(outPath);
+            converter.Convert(outPath.Replace(".gltf", ".gbl"));
+
+            var offsetsPath = Path.Combine(variables.folderManager.roomPath,"offsets.json");
+            var offsets = variables.offsets.ToDict();
+            File.WriteAllText(offsetsPath, offsets);
+
             Kill();
         }
         public void Kill()

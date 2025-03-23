@@ -1,5 +1,4 @@
 namespace FuturamaLib.GLTF.Init
-
 {
     public class FolderManager
     {

@@ -33,10 +33,11 @@ namespace FuturamaLib.GLTF.Builder
                 }
             }
 
-            var alpha = new TexAplaMode(niNode, mesh);
+            var alpha = new TexAlphaMode(niNode, mesh);
             materialdict["alphaMode"] = alpha.alphaMode;
             materialdict["pbrMetallicRoughness"] = pbrMetallicRoughness;
             gltf.structure.materials.Add(materialdict);
+            
 
         }
 
@@ -47,9 +48,6 @@ namespace FuturamaLib.GLTF.Builder
 
             var texture = new GTexture(ref gltf, tex, gltf.counter.refIdToCounter[texref]);
             pbrMetallicRoughness = texture.pbrMetallicRoughness;
-
-            materialdict["extras"] = image.extras;
-
             mcount = gltf.counter.texture++;
         }
         public static void CreateMaterial(NiMaterialProperty mat)

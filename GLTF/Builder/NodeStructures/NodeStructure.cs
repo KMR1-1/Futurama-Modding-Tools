@@ -8,7 +8,6 @@ namespace FuturamaLib.GLTF.Builder.NodeStructures
     {
         public NodeStructure(ref Gltf gltf, NIFReader reader, string stageName)
         {
-
             var forbidden = new List<string>
             {
                 "AINets",
@@ -24,7 +23,6 @@ namespace FuturamaLib.GLTF.Builder.NodeStructures
                 {
                     var relativeFilePath = Path.Combine(gltf.variables.folderManager.relativePath, $"{stageName}.nif");
                     var extradict = new Dictionary<string, object> { { "filePath", relativeFilePath } };
-                    gltf.structure.asset["extras"] = extradict;
                     gltf.variables.folderManager.CreateStage(stageName);
                     gltf.structure.scenes.Add(0);
                     var name = niNode.Name.Value;
